@@ -1,0 +1,89 @@
+{
+  "name": "react-native-safe-area-context",
+  "version": "0.7.3",
+  "description": "A flexible way to handle safe area, also works on Android and web.",
+  "main": "lib/commonjs/index.js",
+  "module": "lib/module/index.js",
+  "react-native": "src/index.tsx",
+  "types": "lib/typescript/src/index.d.ts",
+  "sideEffects": false,
+  "files": [
+    "/src",
+    "/lib",
+    "/android",
+    "/ios",
+    "/*.podspec"
+  ],
+  "author": "Janic Duplessis <janicduplessis@gmail.com>",
+  "contributors": [
+    "Evan Bacon <bacon@expo.io> (https://github.com/evanbacon)"
+  ],
+  "homepage": "https://github.com/th3rdwave/react-native-safe-area-context#readme",
+  "license": "MIT",
+  "scripts": {
+    "start": "react-native start",
+    "test": "yarn validate:prettier && yarn validate:eslint && yarn validate:typescript && yarn validate:jest",
+    "validate:eslint": "eslint \"src/**/*.{js,ts,tsx}\" \"example/**/*.{js,ts,tsx}\"",
+    "validate:typescript": "tsc --project ./ --noEmit",
+    "validate:prettier": "prettier \"src/**/*.{js,ts,tsx}\" \"example/**/*.{js,ts,tsx}\" --check",
+    "validate:jest": "jest",
+    "prepare": "bob build"
+  },
+  "keywords": [
+    "react-native",
+    "react native",
+    "react-native-web",
+    "expo-web",
+    "safe area",
+    "view"
+  ],
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@react-native-community/bob": "^0.8.0",
+    "@react-native-community/eslint-config": "^0.0.7",
+    "@types/jest": "^25.1.1",
+    "@types/react": "^16.9.19",
+    "@types/react-native": "^0.61.10",
+    "@types/react-test-renderer": "^16.9.2",
+    "@typescript-eslint/eslint-plugin": "^2.19.0",
+    "@typescript-eslint/parser": "^2.19.0",
+    "eslint": "6.8.0",
+    "eslint-config-prettier": "^6.10.0",
+    "eslint-plugin-prettier": "3.1.2",
+    "expo": "^36.0.2",
+    "jest": "^25.1.0",
+    "metro-react-native-babel-preset": "^0.58.0",
+    "prettier": "^1.19.1",
+    "react": "^16.11.0",
+    "react-dom": "^16.12.0",
+    "react-native": "^0.61.0",
+    "react-native-web": "^0.12.0",
+    "react-test-renderer": "^16.12.0",
+    "typescript": "^3.7.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/th3rdwave/react-native-safe-area-context.git"
+  },
+  "jest": {
+    "preset": "react-native",
+    "testEnvironment": "node",
+    "clearMocks": true,
+    "modulePathIgnorePatterns": [
+      "<rootDir>/lib/"
+    ]
+  },
+  "@react-native-community/bob": {
+    "source": "src",
+    "output": "lib",
+    "targets": [
+      "commonjs",
+      "module",
+      "typescript"
+    ]
+  }
+}

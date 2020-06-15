@@ -11,7 +11,7 @@ import { DarkTheme } from '@react-navigation/native';
 
 export default function Main({ navigation }) {
   return (
-    <SafeAreaView style={{flex: 0, backgroundColor: "#0B976A" }}>
+    <View style={{flex: 0, backgroundColor: "#0B976A" }}>
       <ImageBackground source={require('../../assets/backgroundMain.png')} style={styles.apresentation}>
         <View style={styles.header}>
           <IconCactu name="cactus" size={30} color="#fff" />
@@ -66,7 +66,7 @@ export default function Main({ navigation }) {
 
 
       </Animatable.View>
-    </SafeAreaView>
+    </View>
   )
 }
 const styles = StyleSheet.create({
@@ -81,6 +81,8 @@ const styles = StyleSheet.create({
   header:{
     width: '100%',
     padding: 10,
+    marginTop: 50,
+    marginBottom: -30,
     flexDirection: "row",
     justifyContent: "space-between"
   },
@@ -97,7 +99,7 @@ const styles = StyleSheet.create({
     paddingVertical: 15,
     width: "90%",
     marginLeft: "5%",
-    marginTop: 20,
+    marginTop: 10,
     borderRadius: 4,
     borderColor: "#fff",
     borderWidth: 1,

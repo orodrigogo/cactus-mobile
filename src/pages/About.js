@@ -32,7 +32,7 @@ export default function About({ route, navigation }) {
   }
   
   return (
-    <SafeAreaView style={{flex: 0, backgroundColor: "#0B976A" }}>
+    <View style={{flex: 0, backgroundColor: "#0B976A" }}>
       {/* Background */}
       <ImageBackground source={require('../../assets/backgroundMain.png')} style={styles.apresentation}>
         <View style={styles.header}>
@@ -120,7 +120,7 @@ export default function About({ route, navigation }) {
           </Animatable.View>
         
       </ScrollView>
-    </SafeAreaView>
+    </View>
   )
 }
 
@@ -138,7 +138,9 @@ const styles = StyleSheet.create({
     width: '100%',
     padding: 10,
     flexDirection: "row",
-    justifyContent: "space-between"
+    justifyContent: "space-between",
+    marginTop: 50,
+    marginBottom: -30,
   },
   h1: {
     left: -190,
@@ -157,7 +159,7 @@ const styles = StyleSheet.create({
     paddingVertical: 15,
     width: "90%",
     marginLeft: "5%",
-    marginTop: 20,
+    marginTop: 10,
     borderRadius: 4,
     borderColor: "#fff",
     borderWidth: 1,

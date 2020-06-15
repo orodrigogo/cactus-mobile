@@ -13,7 +13,15 @@ const Stack = createSharedElementStackNavigator();
 export default function({navigation}){
   return(
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="main" screenOptions={{headerShown:false}}>
+      <Stack.Navigator 
+      initialRouteName="main" 
+      headerMode="none"
+      screenOptions={
+        {headerShown:false},
+        {cardStyle: {backgroundColor: '#FFF'}}
+      }
+        
+      >
         <Stack.Screen component={Main} name="Main"/>
         <Stack.Screen component={About} name="About"
         options={navigation => ({

@@ -1,0 +1,63 @@
+{
+  "name": "@react-navigation/core",
+  "version": "3.7.6",
+  "description": "Core utilities for the react-navigation framework",
+  "main": "lib/commonjs/index.js",
+  "react-native": "lib/module/index.js",
+  "module": "lib/module/index.js",
+  "files": [
+    "src",
+    "lib"
+  ],
+  "scripts": {
+    "prepare": "bob build",
+    "clean": "del lib"
+  },
+  "sideEffects": false,
+  "publishConfig": {
+    "access": "public",
+    "tag": "4.x"
+  },
+  "keywords": [
+    "react-navigation",
+    "routing",
+    "ios",
+    "android"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/react-navigation/react-navigation-core.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/react-navigation/react-navigation-core/issues"
+  },
+  "homepage": "https://github.com/react-navigation/react-navigation-core#readme",
+  "dependencies": {
+    "hoist-non-react-statics": "^3.3.2",
+    "path-to-regexp": "^1.8.0",
+    "query-string": "^6.11.1",
+    "react-is": "^16.13.0"
+  },
+  "devDependencies": {
+    "@react-native-community/bob": "^0.10.0",
+    "del-cli": "^3.0.0",
+    "react": "~16.9.0",
+    "react-native": "~0.61.5",
+    "react-native-testing-library": "^1.12.0",
+    "react-test-renderer": "^16.9.2"
+  },
+  "peerDependencies": {
+    "react": "*"
+  },
+  "@react-native-community/bob": {
+    "source": "src",
+    "output": "lib",
+    "targets": [
+      "commonjs",
+      "module"
+    ]
+  },
+  "gitHead": "f34ec461111da49a9ad7ce5c4c470da8a2e9fdfc"
+}
