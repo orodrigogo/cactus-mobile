@@ -1,5 +1,5 @@
 <h3 align="center">
-  Preview do Aplicativo
+  Demonstração do Aplicativo
 </h3>
 
 
